@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlowUp - Unlock Your Best Look</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Glow<span>Up</span></div>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign Up</a></li>
+    </ul>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Bring your <span class="gradient-text">confidence</span> to life</h1>
+  <p>GlowUp kursi bilan o'zingni eng yaxshi versiyangga aylantir!</p>
+  <div class="hero-buttons">
+    <a href="signup.html" class="btn-primary">Join Now</a>
+    <a href="about.html" class="btn-secondary">Learn More</a>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="plan">
+    <h2>Free</h2>
+    <p class="price">$0/month</p>
+    <ul>
+      <li>Basic Looksmax Tips</li>
+      <li>Limited Access</li>
+      <li>Email Support</li>
+    </ul>
+    <a href="signup.html" class="btn-primary">Get Started</a>
+  </div>
+
+  <div class="plan">
+    <h2>Plus</h2>
+    <p class="price">$10/month</p>
+    <ul>
+      <li>Advanced Looksmaxing Guide</li>
+      <li>Private Community Access</li>
+      <li>1-on-1 Coaching (Monthly)</li>
+    </ul>
+    <a href="signup.html" class="btn-primary">Subscribe</a>
+  </div>
+
+  <div class="plan">
+    <h2>Max</h2>
+    <p class="price">$30/month</p>
+    <ul>
+      <li>All Plus Features</li>
+      <li>Weekly Coaching</li>
+      <li>Full Transformation Plan</li>
+    </ul>
+    <a href="signup.html" class="btn-primary">Go Max</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <h3>GlowUp</h3>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-links">
+      <h3>Help</h3>
+      <a href="contact.html">Support</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-links">
+      <h3>Follow Us</h3>
+      <a href="https://www.instagram.com/az1kk__777?igsh=MW9uazVyaHM3YmY4aA=="><i class="fab fa-instagram"></i> Instagram</a>
+      <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+      <a href="https://youtube.com/@explainingprime1?si=451Ll_JG0HzQ-kjf"><i class="fab fa-youtube"></i> YouTube</a>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; 2025 GlowUp. All Rights Reserved.</p>
+</footer>
+
+<script>
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+</script>
+
+</body>
+</html>
