@@ -1,73 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up - GlowUp</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
 </head>
 <body>
-
-<header>
-  <div class="logo">Glow<span>Up</span></div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-    </ul>
-    <div class="menu-toggle">
-      <i class="fas fa-bars"></i>
-    </div>
-  </nav>
-</header>
-
-<section class="hero">
-  <h1>Create your <span class="gradient-text">GlowUp</span> Account</h1>
-</section>
-
-<section class="contact-form">
-  <form>
-    <input type="text" placeholder="Your name:" required>
-    <input type="email" placeholder="Email adress:" required>
-    <input type="password" placeholder="password:" required>
-    <button type="submit" class="btn-primary">Sign up </button>
+  <h2>Signup</h2>
+  <form id="signupForm">
+    <input type="email" id="signupEmail" placeholder="Enter email" required /><br/>
+    <input type="password" id="signupPassword" placeholder="Enter password" required /><br/>
+    <button type="submit">Sign Up</button>
   </form>
-</section>
+  <p>Already have an account? <a href="login.html">Login</a></p>
 
-<footer>
-  <div class="footer-content">
-    <div class="footer-links">
-      <h3>GlowUp</h3>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <div class="footer-links">
-      <h3>Help</h3>
-      <a href="contact.html">Support</a>
-      <a href="#">FAQ</a>
-    </div>
-    <div class="footer-links">
-      <h3>Follow Us</h3>
-      <a href="https://www.instagram.com/az1kk__777?igsh=MW9uazVyaHM3YmY4aA=="><i class="fab fa-instagram"></i> Instagram</a>
-      <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
-      <a href="https://youtube.com/@explainingprime1?si=451Ll_JG0HzQ-kjf"><i class="fab fa-youtube"></i> YouTube</a>
-    </div>
-  </div>
-  <p class="footer-bottom">&copy; 2025 GlowUp. All Rights Reserved.</p>
-</footer>
-
-<script>
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
-</script>
-
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = document.getElementById('signupEmail').value;
+      const password = document.getElementById('signupPassword').value;
+      localStorage.setItem('userEmail', email);
+      localStorage.setItem('userPassword', password);
+      alert('Signup successful! Please login.');
+      window.location.href = 'login.html';
+    });
+  </script>
 </body>
 </html>
