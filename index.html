@@ -1,16 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="google-site-verification" content="rAhwMoZtR1bBiLuXn8P8f_Sgv3phhtlcI2rsEvYz1o0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GlowUp - Unlock Your Best Look</title>
-  <meta name="google-site-verification" content="rAhwMoZtR1bBiLuXn8P8f_Sgv3phhtlcI2rsEvYz1o0" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-</head>
-<body>
+  <style>
+    .pricing {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+      background: #f9f9f9;
+    }.plan {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
 
-<header>
+.plan::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  animation: rotateBg 6s linear infinite;
+  z-index: -1;
+  transform: rotate(0deg);
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.plan h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.plan .price {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.plan ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan ul li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  color: #444;
+}
+
+.btn-primary {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #5a4bcf;
+}
+
+@keyframes rotateBg {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+</head>
+<body><header>
   <div class="logo">Glow<span>Up</span></div>
   <nav>
     <ul class="nav-links">
@@ -24,42 +102,34 @@
       <i class="fas fa-bars"></i>
     </div>
   </nav>
-</header>
-
-<section class="hero">
+</header><section class="hero">
   <h1>Bring your <span class="gradient-text">confidence</span> to life</h1>
-  <p>Become the best version of yourself with the GlowUp course!</p>
+  <p>is a center for courses that will maximize your appearance and self-confidence. We will help you become the best version of yourself with professional advice and strategies.</p>
   <div class="hero-buttons">
     <a href="signup.html" class="btn-primary">Join Now</a>
     <a href="about.html" class="btn-secondary">Learn More</a>
   </div>
-</section>
-
-<section class="pricing">
+</section><section class="pricing">
   <div class="plan">
     <h2>Free</h2>
     <p class="price">$0/month</p>
     <ul>
       <li>Basic Looksmax Tips</li>
       <li>Limited Access</li>
-      <li>Avaible also on Wattpad and Medium</li>
+      <li>Available on Medium and Wattpad platforms</li>
     </ul>
     <a href="signup.html" class="btn-primary">Get Started</a>
-  </div>
-
-  <div class="plan">
+  </div>  <div class="plan">
     <h2>Plus</h2>
-    <p class="price">$10/month</p>
+    <p class="price">$28/month</p>
     <ul>
-      <li>Advanced Looksmaxing Guide</li>
+      <li>Advanced Looksmax Guide</li>
       <li>Private Community Access</li>
-      <li>Guarented results</li>
+      <li>All part of book</li>
     </ul>
     <a href="signup.html" class="btn-primary">Subscribe</a>
   </div>
-</section>
-
-<footer>
+</section><footer>
   <div class="footer-content">
     <div class="footer-links">
       <h3>GlowUp</h3>
@@ -80,16 +150,12 @@
     </div>
   </div>
   <p class="footer-bottom">&copy; 2025 GlowUp. All Rights Reserved.</p>
-</footer>
-
-<script>
+</footer><script>
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 menuToggle.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
-</script>
-
-</body>
+</script></body>
 </html>
