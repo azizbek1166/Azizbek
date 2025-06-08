@@ -1,21 +1,6 @@
-document.getElementById("signupForm")?.addEventListener("submit", function(event) {
-  event.preventDefault();
-  const email = document.getElementById("signupEmail").value;
-  const password = document.getElementById("signupPassword").value;
-  localStorage.setItem("userEmail", email);
-  localStorage.setItem("userPassword", password);
-  document.getElementById("signupMessage").innerText = "Registration successful!";
-});
+document.getElementById("signupForm")?.addEventListener("submit", function(event) { event.preventDefault(); const email = document.getElementById("signupEmail").value; const password = document.getElementById("signupPassword").value; localStorage.setItem("userEmail", email); localStorage.setItem("userPassword", password); document.getElementById("signupMessage").innerText = "Registration successful!"; });
 
-document.getElementById("loginForm")?.addEventListener("submit", function(event) {
-  event.preventDefault();
-  const email = document.getElementById("loginEmail").value;
-  const password = document.getElementById("loginPassword").value;
-  const storedEmail = localStorage.getItem("userEmail");
-  const storedPassword = localStorage.getItem("userPassword");
-  if (email === storedEmail && password === storedPassword) {
-    window.location.href = "course.html";
-  } else {
-    document.getElementById("loginMessage").innerText = "Invalid email or password";
-  }
-});
+document.getElementById("loginForm")?.addEventListener("submit", function(event) { event.preventDefault(); const email = document.getElementById("loginEmail").value; const password = document.getElementById("loginPassword").value; const storedEmail = localStorage.getItem("userEmail"); const storedPassword = localStorage.getItem("userPassword"); if (email === storedEmail && password === storedPassword) { window.location.href = "course.html"; } else { document.getElementById("loginMessage").innerText = "Invalid email or password"; } });
+
+=== Course Card Hover Animation === document.querySelectorAll(".plan").forEach(plan => { plan.addEventListener("mousemove", e => { const rect = plan.getBoundingClientRect(); const x = e.clientX - rect.left; const y = e.clientY - rect.top; plan.style.setProperty("--mouse-x", ${x}px); plan.style.setProperty("--mouse-y", ${y}px); }); });
+
