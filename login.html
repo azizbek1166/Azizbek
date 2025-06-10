@@ -1,20 +1,85 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Login</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="email" id="loginEmail" placeholder="Email" required>
-      <input type="password" id="loginPassword" placeholder="Password" required>
-      <button type="submit">Login</button>
-    </form>
-    <p id="loginMessage"></p>
-    <p>Don't have an account? <a href="signup.html">Sign up</a></p>
-  </div>
-  <script src="script.js"></script>
-</body>
+<!DOCTYPE html>    
+<html>    
+<head>    
+  <title>Login</title>    
+  <link rel="stylesheet" href="style.css">    
+  <style>
+    body {
+      background: linear-gradient(135deg, #6e7c7f, #2a3531); /* Graphite Chrome gradient */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      margin-top: 100px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: linear-gradient(135deg, #e0cda8, #d4b683); /* Ivory Gold gradient */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    p {
+      color: #ddd;
+    }
+
+    a {
+      color: #a0c9f7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>  
+</head>    
+<body>    
+  <div class="container">    
+    <h2>Login</h2>    
+    <form id="loginForm">    
+      <input type="email" id="loginEmail" placeholder="Email" required>    
+      <input type="password" id="loginPassword" placeholder="Password" required>    
+      <button type="submit">Login</button>    
+    </form>    
+    <p id="loginMessage"></p>    
+    <p>Don't have an account? <a href="signup.html">Sign up</a></p>    
+  </div>    
+  <script src="script.js"></script>    
+</body>    
 </html>
